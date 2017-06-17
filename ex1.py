@@ -5,5 +5,7 @@ data = [1, 2, 3, 4, 5]
 distData = sc.parallelize(data)
 
 # find the sum by reduce
-distData.reduce(lambda a,b:a+b)
+sum = distData.reduce(lambda a,b:a+b)
+
+print sum
 
